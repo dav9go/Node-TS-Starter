@@ -1,0 +1,35 @@
+{
+  "name": "apiinterior",
+  "version": "1.0.0",
+  "description": "API for interior design ideas",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.ts",
+    "dev": "NODE_ENV=development tsc",
+    "lint": "eslint src --ext .ts",
+    "serve:dev": "NODE_ENV=development node dist/index.js",
+    "serve:prod": "NODE_ENV=production node dist/index.js"
+  },
+  "author": "dav9go",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.1",
+    "@types/uuid": "^10.0.0",
+    "eslint": "^9.13.0",
+    "express": "^4.21.1",
+    "globals": "^15.11.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.11.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "uuid": "^10.0.0"
+  }
+}
